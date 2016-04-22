@@ -59,7 +59,8 @@ public class MainActivity extends BaseActivity implements android.app.ActionBar.
         /**
          * Create Firebase references
          */
-        mUserRef = new Firebase(Constants.FIREBASE_URL_USERS).child(mEncodedEmail);
+
+        mUserRef = new Firebase(Constants.FIREBASE_URL_USERS);
 
         /**
          * Link layout elements from XML and setup the toolbar
